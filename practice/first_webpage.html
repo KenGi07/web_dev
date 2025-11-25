@@ -5,21 +5,20 @@
     <title>Top 5 Games</title>
     <meta charset="UTF-8">
     <style>
-        header{text-align: center;}
-        body{background-color: rgb(196, 216, 228);color: rgb(80, 97, 112);  background-color: rgb(196, 216, 228);
+     
+        main{background-color: rgb(196, 216, 228);color: rgb(80, 97, 112);  background-color: rgb(196, 216, 228);
             color: rgb(80, 97, 112);
             font-family: Arial, sans-serif;
 
             
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: grid;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            
             margin: 10px;
-            padding-bottom: 10px;
+            padding-left: 10px;
         }
-        img{border-radius: 8px;max-width: 100%;height: auto; 
-           
-        }
+        img{border-radius: 8px;max-width: 50%;height: auto; }
         
     </style>
 </head>
@@ -33,37 +32,37 @@
             <li>FNaF</li>
             <li>Fortnite</li>
         </ol>
-
-    </header>
-    <main>
         <h2>Welcome to Kenjis Top 5 games of all time</h2>
         <p>Theres a lot of game that have come out over the years but there is 5 games that take the icing on the cake of most influential, fun, and interactive games to ever exist</p>
+    </header>
+    <main>
 
-        <a href="https://en.wikipedia.org/wiki/Fortnite" target="_blank"><h2>#5 Fortnite</h2></a>
+       <div id="Fortnite"><a href="https://en.wikipedia.org/wiki/Fortnite" target="_blank"><h2>#5 Fortnite</h2></a>
         <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000010192/f26fc9e1b11ce01369966ed9225e320a293c4eaad1329774f125e05629ffd437" alt=" Fortnite promotional image"/>
         <h3>By Epic games</h3>
         <p>Fortnite is Battle royale where you fight 99 other people for the Victory Royale where only one stands tall.</p>
-
+    </div><div id="FNaF">
         <a href="https://en.wikipedia.org/wiki/Five_Nights_at_Freddy%27s" target="_blank"><h2>#4 FNaF (five nights at freddys)</h2></a>
         <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000019965/08299376dea6ffacc28fe1f72b59dac97ab2430b75c8bee6e7054829ce58754d" alt="Five_Nights_at_Freddy promotional image"/>
         <h3>By Scott Cawthon</h3>
         <p>FNaF also know as Five Nights at Freddys is a scary horror game where you work in a pizza place at night and try to survive while big scary animatronics attack you.</p>
-
+    </div><div id="Minecraft">
         <a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank"><h2>#3 Minecraft</h2></a>
         <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a" alt="Minecraft promotional image"/>
         <h3>By Notch</h3>
         <p>Minecraft is an open world where the player is the only thing that stops the ever ending imagination.</p>
-
+    </div><div id="SA2">
         <a href="https://en.wikipedia.org/wiki/Sonic_Adventure_2" target="_blank"><h2>#2 Sonic Adventure 2</h2></a>
         <img src="https://store-images.s-microsoft.com/image/apps.17246.65514775774164697.93aba639-de28-44f8-9500-809a22ecc733.916d1704-dfc5-4fcd-9ce1-fba66fb80b87?q=90&w=480&h=270" alt="Sonic_Adventure_2 battle loading screen">
         <h3>By Sega</h3>
         <p>Sonic Adventure 2 or SA2 for short is a high speed Platformer where you control mutiple characters but your MC is Sonic the hedgehog. </p>
-
+    </div><div id="Pac-Man">
         <a href="https://en.wikipedia.org/wiki/Pac-Man" target="_blank"><h2>#1 PAC-MAN</h2></a>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxUiKax7cK4jj7epm9gk-zZj0r9eEUYEepTA&s" alt="Game of Pac-Mans"/>
         <h3>By Namco Bandai</h3>
         <p>PAC-MAN is a very influential game it was one of the most popular arcade games to ever exist it was a quick pace game where you have to get every pellet while avoiding the ghosts.</p>
-    </main>
+    </div>
+ </main>
 </body>
 </html>
 
