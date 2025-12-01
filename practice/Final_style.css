@@ -1,0 +1,13 @@
+body{
+    font-family:monospace;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: darkgrey;
+}
+.conatiner{display: grid;
+grid-template-columns: 1/2fr 1/2fr 1/2fr 1/2fr 1/2fr;
+grid-template-rows: 1/2fr 1/2fr;
+outline-color: black;
+outline: 15px;
+}
