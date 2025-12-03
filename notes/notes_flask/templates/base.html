@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block content%}{% endblock%}</title>
+    <style>
+        img{height: 200px; width: auto;}
+
+        #nav a{margin-bottom: 20px;}
+        #nav a:hover{margin-right: 15px; text-decoration: none; color: #333;}
+    </style>
+</head>
+<body>
+    <h1>Welcome to hi but in flask</h1>
+   <div id="nav">
+    <a href="/">Home</a><p>|</p>
+    <a href="/contact">contact</a> <p>|</p>
+    <a href="/about">about</a>
+   </div>
+   {% block body %} {% endblock %}
+</body>
+</html>
