@@ -20,12 +20,17 @@
         }
 
         img {
-            width: 375px;
+            width: 275px;
             margin-left: 15px;
             border-radius: 10px;
-        }
-
         
+            
+        }
+#zion3{display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 25px;}
+        #zion1{text-align: center;}
+
 
         ul {
             line-height: 30px;
@@ -48,17 +53,30 @@
  <ul>
     <li>Beautiful scenery</li>
     <li>Great hiking spots</li>
- </ul></div>
-<div id="zion4">
+ </ul>
     <img src="https://wildlandtrekking.com/content/uploads/2020/03/image2-9-1.jpg" alt="people hiking walking through river">
 <ul>
     <li>Good food</li>
     <li>Very fast to enter and open in the winter</li>
 </ul></div>
-<div id="zion5">
-    <img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion-2/zion_mighty-five_hiking_payne_angie_2020.jpg" alt="mountains">
-</div>
+    <img id="hoverImg" src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion-2/zion_mighty-five_hiking_payne_angie_2020.jpg" alt="mountains"> 
 
-    <img src="https://www.desertusa.com/zion/images/IMG_2349.jpg" alt="red rock mountains">
     </main>
+    <script>
+
+
+const hoverImg = document.getElementById("hoverImg");
+hoverImg.addEventListener("mouseout", function () {
+    hoverImg.src= "https://www.desertusa.com/zion/images/IMG_2349.jpg";
+
+});
+hoverImg.addEventListener("mouseover", function () {
+    hoverImg.src= "https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion-2/zion_mighty-five_hiking_payne_angie_2020.jpg";
+
+});
+
+
+
+
+    </script>
 </body>
