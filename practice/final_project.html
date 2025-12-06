@@ -62,6 +62,12 @@ gap: 25px;}
     <img id="hoverImg" src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion-2/zion_mighty-five_hiking_payne_angie_2020.jpg" alt="mountains"> 
 
     </main>
+    <button onclick="toggleInfo()">Show / Hide Info</button>
+    <div id="extra-info">
+        <p> Theres a lot more things you can do in zion. Its a national park and is very important it has beautiful areas that are not known as much but that is the beauty of national parks and how wonderful works they are </p>
+        <img src=https://www.nps.gov/zion/planyourvisit/images/Zion-Canyon-Trail-Hero-Image.jpg width="200px">
+        
+    </div>
     <script>
 
 
@@ -74,6 +80,10 @@ hoverImg.addEventListener("mouseover", function () {
     hoverImg.src= "https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion-2/zion_mighty-five_hiking_payne_angie_2020.jpg";
 
 });
+function toggleInfo() {
+            const info = document.getElementById("extra-info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
 
 
 
